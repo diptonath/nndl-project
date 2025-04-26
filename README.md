@@ -45,13 +45,13 @@ All models are built using TensorFlow/Keras frameworks.
 - Regularized for better generalization.
 
 ### 📸 Model Architecture Summary  
-*(Insert Screenshot Here)*
+![NeuroMood Architecture](screenshots/neuroMood_architecture.png)
 
 ### 📈 Training Accuracy and Loss Curves  
-*(Insert Screenshot Here)*
+![NeuroMood Training Curves](screenshots/neuroMood_training_curves.png)
 
 ### 🔥 Confusion Matrix  
-*(Insert Screenshot Here)*
+![NeuroMood Confusion Matrix](screenshots/neuroMood_confusion_matrix.png)
 
 ## Model 2: VisageNet
 - **File**: `VisageNet_model.ipynb`
@@ -68,13 +68,13 @@ All models are built using TensorFlow/Keras frameworks.
 - Good balance between performance and efficiency.
 
 ### 📸 Model Architecture Summary  
-*(Insert Screenshot Here)*
+![VisageNet Architecture](screenshots/visageNet_architecture.png)
 
 ### 📈 Training Accuracy and Loss Curves  
-*(Insert Screenshot Here)*
+![VisageNet Training Curves](screenshots/visageNet_training_curves.png)
 
 ### 🔥 Confusion Matrix  
-*(Insert Screenshot Here)*
+![VisageNet Confusion Matrix](screenshots/visageNet_confusion_matrix.png)
 
 ## Model 3: EmotiNet
 - **File**: `EmotiNet_model.ipynb`
@@ -91,10 +91,10 @@ All models are built using TensorFlow/Keras frameworks.
 - Quick training and low memory footprint.
 
 ### 📈 Training Accuracy and Loss Curves  
-*(Insert Screenshot Here)*
+![EmotiNet Training Curves](screenshots/emotiNet_training_curves.png)
 
 ### 🔥 Confusion Matrix  
-*(Insert Screenshot Here)*
+![EmotiNet Confusion Matrix](screenshots/emotiNet_confusion_matrix.png)
 
 ## Model 4: MoodCNN
 - **File**: `MoodCNN_model.ipynb`
@@ -111,13 +111,13 @@ All models are built using TensorFlow/Keras frameworks.
 - Designed to perform well without being overly deep.
 
 ### 📸 Model Architecture Summary  
-*(Insert Screenshot Here)*
+![MoodCNN Architecture](screenshots/moodCNN_architecture.png)
 
 ### 📈 Training Accuracy and Loss Curves  
-*(Insert Screenshot Here)*
+![MoodCNN Training Curves](screenshots/moodCNN_training_curves.png)
 
 ### 🔥 Confusion Matrix  
-*(Insert Screenshot Here)*
+![MoodCNN Confusion Matrix](screenshots/moodCNN_confusion_matrix.png)
 
 ## Model 5: FERLight
 - **File**: `FERLight_model.ipynb`
@@ -134,13 +134,13 @@ All models are built using TensorFlow/Keras frameworks.
 - Best suited for low-resource environments like web apps or mobile devices.
 
 ### 📸 Model Architecture Summary  
-*(Insert Screenshot Here)*
+![FERLight Architecture](screenshots/ferLight_architecture.png)
 
 ### 📈 Training Accuracy and Loss Curves  
-*(Insert Screenshot Here)*
+![FERLight Training Curves](screenshots/ferLight_training_curves.png)
 
 ### 🔥 Confusion Matrix  
-*(Insert Screenshot Here)*
+![FERLight Confusion Matrix](screenshots/ferLight_confusion_matrix.png)
 
 # Common Training Details
 - **Loss Function**: Categorical Crossentropy
@@ -160,8 +160,3 @@ This project explores and contrasts multiple CNN architectures for facial emotio
 | FERLight   | Minimalist design for fastest performance |
 
 Comparative performance (accuracy, training speed, confusion matrices) helps users choose the best model depending on requirements like accuracy, speed, or deployment constraints.
-
-# Appendix
-
-🔗 **GitHub Repository:**  
-👉 [Custom CNN Models for Facial Emotion Recognition](https://github.com/diptonath/nndl-project)
