@@ -5,10 +5,10 @@ This project implements and compares **five custom Convolutional Neural Network 
 Each model has different architectural designs and complexities to evaluate their performance and efficiency for emotion recognition tasks.
 
 The models developed are:
-- **NeuroMood**
 - **VisageNet**
 - **EmotiNet**
 - **MoodCNN**
+- **NeuroMood**
 - **FERLight**
 
 All models are built using TensorFlow/Keras frameworks.
@@ -29,7 +29,73 @@ All models are built using TensorFlow/Keras frameworks.
 
 # Model Details
 
-## Model 1: NeuroMood
+## Model 1: VisageNet
+- **File**: `VisageNet_model.ipynb`
+
+### Architecture
+- Sequential CNN layers with batch normalization after convolutions.
+- Aggressive downsampling through pooling.
+- Smaller dense layers compared to NeuroMood.
+- Higher dropout rates.
+
+### Highlights
+- Faster convergence thanks to batch normalization.
+- Lighter and faster than NeuroMood.
+- Good balance between performance and efficiency.
+
+### 📸 Model Architecture Summary  
+![VisageNet Architecture](screenshots/visageNet_architecture.png)
+
+### 📈 Training Accuracy and Loss Curves  
+![VisageNet Training Curves](screenshots/visageNet_training_curves.png)
+
+### 🔥 Confusion Matrix  
+![VisageNet Confusion Matrix](screenshots/visageNet_confusion_matrix.png)
+
+## Model 2: EmotiNet
+- **File**: `EmotiNet_model.ipynb`
+
+### Architecture
+- CNN layers with smaller kernel sizes.
+- GlobalAveragePooling2D instead of Flatten to reduce parameter count.
+- Compact dense layers.
+- Final softmax classification.
+
+### Highlights
+- Most lightweight model among the three.
+- Suitable for mobile or embedded applications.
+- Quick training and low memory footprint.
+
+### 📈 Training Accuracy and Loss Curves  
+![EmotiNet Training Curves](screenshots/emotiNet_training_curves.png)
+
+### 🔥 Confusion Matrix  
+![EmotiNet Confusion Matrix](screenshots/emotiNet_confusion_matrix.png)
+
+## Model 3: MoodCNN
+- **File**: `MoodCNN_model.ipynb`
+
+### Architecture
+- Fewer convolutional layers but deeper filters.
+- Uses both MaxPooling and AveragePooling.
+- Introduces early dropout in convolution blocks.
+- Larger dense layers for final prediction.
+
+### Highlights
+- Balances depth and width of the network.
+- Early dropout helps in regularization during convolution stages.
+- Designed to perform well without being overly deep.
+
+### 📸 Model Architecture Summary  
+![MoodCNN Architecture](screenshots/moodCNN_architecture.png)
+
+### 📈 Training Accuracy and Loss Curves  
+![MoodCNN Training Curves](screenshots/moodCNN_training_curves.png)
+
+### 🔥 Confusion Matrix  
+![MoodCNN Confusion Matrix](screenshots/moodCNN_confusion_matrix.png)
+
+## Model 4: NeuroMood
 - **File**: `NeuroMood_model.ipynb`
 
 ### Architecture
@@ -53,71 +119,6 @@ All models are built using TensorFlow/Keras frameworks.
 ### 🔥 Confusion Matrix  
 ![NeuroMood Confusion Matrix](screenshots/neuroMood_confusion_matrix.png)
 
-## Model 2: VisageNet
-- **File**: `VisageNet_model.ipynb`
-
-### Architecture
-- Sequential CNN layers with batch normalization after convolutions.
-- Aggressive downsampling through pooling.
-- Smaller dense layers compared to NeuroMood.
-- Higher dropout rates.
-
-### Highlights
-- Faster convergence thanks to batch normalization.
-- Lighter and faster than NeuroMood.
-- Good balance between performance and efficiency.
-
-### 📸 Model Architecture Summary  
-![VisageNet Architecture](screenshots/visageNet_architecture.png)
-
-### 📈 Training Accuracy and Loss Curves  
-![VisageNet Training Curves](screenshots/visageNet_training_curves.png)
-
-### 🔥 Confusion Matrix  
-![VisageNet Confusion Matrix](screenshots/visageNet_confusion_matrix.png)
-
-## Model 3: EmotiNet
-- **File**: `EmotiNet_model.ipynb`
-
-### Architecture
-- CNN layers with smaller kernel sizes.
-- GlobalAveragePooling2D instead of Flatten to reduce parameter count.
-- Compact dense layers.
-- Final softmax classification.
-
-### Highlights
-- Most lightweight model among the three.
-- Suitable for mobile or embedded applications.
-- Quick training and low memory footprint.
-
-### 📈 Training Accuracy and Loss Curves  
-![EmotiNet Training Curves](screenshots/emotiNet_training_curves.png)
-
-### 🔥 Confusion Matrix  
-![EmotiNet Confusion Matrix](screenshots/emotiNet_confusion_matrix.png)
-
-## Model 4: MoodCNN
-- **File**: `MoodCNN_model.ipynb`
-
-### Architecture
-- Fewer convolutional layers but deeper filters.
-- Uses both MaxPooling and AveragePooling.
-- Introduces early dropout in convolution blocks.
-- Larger dense layers for final prediction.
-
-### Highlights
-- Balances depth and width of the network.
-- Early dropout helps in regularization during convolution stages.
-- Designed to perform well without being overly deep.
-
-### 📸 Model Architecture Summary  
-![MoodCNN Architecture](screenshots/moodCNN_architecture.png)
-
-### 📈 Training Accuracy and Loss Curves  
-![MoodCNN Training Curves](screenshots/moodCNN_training_curves.png)
-
-### 🔥 Confusion Matrix  
-![MoodCNN Confusion Matrix](screenshots/moodCNN_confusion_matrix.png)
 
 ## Model 5: FERLight
 - **File**: `FERLight_model.ipynb`
